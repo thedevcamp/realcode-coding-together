@@ -104,6 +104,22 @@ if(!location.state){
 
             <Editor socketRef={socketRef} roomId={roomId} onCodeChange={(code)=> codeRef.current=code}/>
         </div>
+        <div className='input-output'>
+                    <div className='lang'>
+                        Language: <select name='lang' id='lang'>
+                            <option value='python'>Python</option>
+
+                        </select>
+                    </div>
+                    <form id="code" name="code" method="post">
+                    <div className='input'>
+                    <textarea id='input' placeholder='Input goes here...'></textarea>
+                    </div>
+                    <div className='output'><textarea id='output' placeholder='Output goes here...'></textarea></div>
+                    
+                    <button onclick="submit">Submit</button>
+                     </form>
+        </div>
     </div>
   )
 }

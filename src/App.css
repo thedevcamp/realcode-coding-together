@@ -175,3 +175,16 @@ footer a:hover {
   line-height: 1.6;
   padding-top: 20px;
 }
+.input-output {
+  display: flex;
+  flex-direction: column;
+}
+
+#input {
+  height: 40vh;
+  width: 100%;
+}
+#output {
+  height: 40vh;
+  width: 100%;
+}
